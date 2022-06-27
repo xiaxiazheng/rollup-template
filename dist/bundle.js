@@ -13,7 +13,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 import React, { useState } from 'react';
 
 var Button = function Button(props) {
-  return /*#__PURE__*/React.createElement("button", props, "\u6309\u94AE111");
+  return /*#__PURE__*/React.createElement("button", props, "\u6309\u94AE");
 };
 
 function addOne(a) {
@@ -35,8 +35,8 @@ var Counter = function Counter(props) {
   }, "counter+1"), "\u8BA1\u6570\u5668\uFF1A", counter);
 };
 
-function sum(a, b) {
+var sum = function sum(a, b) {
   return a + b;
-}
+};
 
 export { Button, Counter, addOne, sum };

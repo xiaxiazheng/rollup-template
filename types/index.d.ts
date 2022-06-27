@@ -1,0 +1,1 @@
+export type Sum = (a: number, b: number) => number;
