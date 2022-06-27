@@ -4,7 +4,15 @@
 
 ### yalc 的使用
 
-yalc push
+```yalc push```
+
 会得到：rollup-template@1.0.0 published in store.
 
-在使用的地方，用 yalc add rollup-template@1.0.0 即可。
+在使用的地方，用 ```yalc add rollup-template@1.0.0``` 即可。
+
+### 组件引入后的使用
+```
+import { Button, sum, addOne, Counter } from "rollup-template";
+import "rollup-template/dist/style.css";
+```
+样式文件需要单独引入。
