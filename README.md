@@ -1,6 +1,6 @@
 ### 本地调试
 
-不要用 npm link，会出现 react 版本冲突的问题，要用 yalc
+不要用 npm link，会出现 react 版本冲突的问题，要用 yalc，已经内置
 
 ### yalc 的使用
 
