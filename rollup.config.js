@@ -7,7 +7,7 @@ import typescript from "@rollup/plugin-typescript";
 export default {
   input: "src/index.ts",
   acornInjectPlugins: [jsx()],
-  external: ["react"],
+  external: ["react", "react-dom"],
   plugins: [
     resolve(),
     commonjs(),
