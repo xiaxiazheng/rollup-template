@@ -1,10 +1,4 @@
-import Button from "./button";
-import { addOne } from "./add_one";
-import Counter from "./counter";
-import { Sum } from "../types/index";
+export { default as Button } from "./components/button";
+export { default as Counter } from "./components/counter";
 
-const sum: Sum = (a, b) => {
-  return a + b;
-};
-
-export { sum, Button, addOne, Counter };
+export * from "./utils/index";

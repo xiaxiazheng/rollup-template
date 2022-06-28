@@ -1,6 +1,3 @@
-import Button from "./button";
-import { addOne } from "./add_one";
-import Counter from "./counter";
-import { Sum } from "../types/index";
-declare const sum: Sum;
-export { sum, Button, addOne, Counter };
+export { default as Button } from "./components/button";
+export { default as Counter } from "./components/counter";
+export * from "./utils/index";
