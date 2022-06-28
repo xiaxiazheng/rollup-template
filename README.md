@@ -1,3 +1,6 @@
+## 介绍
+一个 rollup + react + typescript 的模板项目，用于发布 react 组件或者 JS 工具函数的 npm 包。
+
 ### 本地调试
 
 不要用 npm link，会出现 react 版本冲突的问题，要用 yalc，已经内置
