@@ -7,13 +7,15 @@ import postcss from "rollup-plugin-postcss";
 import autoprefixer from "autoprefixer";
 import cssnano from "cssnano";
 import { terser } from "rollup-plugin-terser";
+import filesize from "rollup-plugin-filesize";
 
 export default {
   input: "src/index.ts",
   acornInjectPlugins: [jsx()],
   external: ["react", "react-dom"],
   plugins: [
-    postcss({ // 处理 less
+    postcss({
+      // 处理 less
       plugins: [autoprefixer, cssnano],
       extensions: [".less", ".css"],
       use: ["less"],
@@ -28,6 +30,7 @@ export default {
       extensions: [".js", ".jsx", ".es6", ".es", ".mjs", ".ts", ".tsx"],
     }),
     terser(), // 压缩代码
+    filesize(), // 在控制台显示文件大小
   ],
   output: {
     // file: "dist/bundle.js",
